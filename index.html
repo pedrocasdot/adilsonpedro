@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AP</title>
+    
+    <link rel="icon" href="n1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="AP.css">
+</head>
+<body oncontextmenu="return false">
+    <div class="scanlines"></div>
+   
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.0s;">Contacto</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:0.0s;">
+        
+        <h1>Adilson Pedro.</h1>
+        <h2>Software Developer / Competitive Programmer / Pentest Student / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">Sobre mim</a>
+            <a onclick="showwork()">Trabalhos</a>
+            <a onclick="showcontact()">Contacto</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:1.2s;"><a  href = "https://www.facebook.com/bpeter01/" class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:1.4s;"><a href = "https://twitter.com/Eidype02/"class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:1.6s;"><a href = "https://www.instagram.com/ad.pedro_/"class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:1.8s;"><a href = "https://github.com/pedrozone"class="social"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="contact_container" class="container">
+    <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+    <h1>Contacto.</h1>
+    <section>
+        <h2>Contacte-me</h2>
+        <p>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required><br>
+                <textarea placeholder="Escreva aqui" required rows="5"></textarea><br>
+                <button class="btn_one">Enviar</button>
+            </form> 
+        </p>
+    </section>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) {
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+            return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+            return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)){
+            return false;
+            }
+
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+            return false;
+        }      
+ }
+    </script>
+    
+</body>
+</html>
